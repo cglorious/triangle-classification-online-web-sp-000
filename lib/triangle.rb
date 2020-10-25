@@ -15,7 +15,7 @@ class Triangle
         raise TriangleError
     elsif (a + b) < c || (a + c) < b || (a + c) < b
         raise TriangleError
-    elsif a == b && a == c #&& a.positive?
+    elsif a == b && a == c
       :equilateral
     elsif a == b && a != c || a == c && a != b || b == c && b != a #positive
       :isosceles
