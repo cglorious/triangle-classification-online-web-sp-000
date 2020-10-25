@@ -16,11 +16,7 @@ class Triangle
     elsif a != b && b!=c
       :scalene
     elsif a == 0 || b == 0 || c == 0
-      #begin
-        raise TriangleError
-      #rescue TriangleError #=> e
-        #puts e.message
-      #end
+      raise TriangleError
     elsif a.negative?|| b.negative? || c.negative?
       #begin
         raise TriangleError
