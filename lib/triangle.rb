@@ -13,7 +13,7 @@ class Triangle
       raise TriangleError
     elsif a.negative?|| b.negative? || c.negative?
         raise TriangleError
-    elsif (a + b) <= c || (a + c) <= b || (a + c) <= b
+    elsif (a + b) <= c || (a + c) <= b || (b + c) <= a
         raise TriangleError
     elsif a == b && a == c
       :equilateral
