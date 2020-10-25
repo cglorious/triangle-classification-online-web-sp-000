@@ -15,7 +15,7 @@ class Triangle
       :isosceles
     elsif a != b && b!=c
       :scalene
-    elsif a == 0 || b == 0 || c == 0
+    elsif a == 0 || b == 0 || c == 0 #positive
       raise TriangleError
     elsif a.negative?|| b.negative? || c.negative?
       #begin
