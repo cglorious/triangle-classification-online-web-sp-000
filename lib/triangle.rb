@@ -18,12 +18,13 @@ class Triangle
     elsif a == 0 || b == 0 || c == 0
       begin
         raise TriangleError
-      rescue TriangleError
+      rescue TriangleError #=> e
+        #puts e.message
       end
     elsif a.negative?|| b.negative? || c.negative?
       begin
         raise TriangleError
-      rescue TriangleError => error
+      rescue TriangleError
       end
     else (a + b) < c || (a + c) < b || (a + c) < b
       begin
@@ -34,7 +35,9 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    nil
+    #def message
+    #  "This is not a triangle."
+    #end
   end
 
 end
