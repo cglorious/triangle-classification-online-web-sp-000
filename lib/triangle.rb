@@ -13,7 +13,7 @@ class Triangle
       :equilateral
     elsif a == b && a != c || a == c && a != b || b == c && b != a
       :isosceles
-    elsif a != b && b!=c
+    elsif a != b && b!=c #positive
       :scalene
     elsif a == 0 || b == 0 || c == 0 #positive
       raise TriangleError
