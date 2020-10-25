@@ -22,15 +22,15 @@ class Triangle
         #puts e.message
       #end
     elsif a.negative?|| b.negative? || c.negative?
-      begin
+      #begin
         raise TriangleError
-      rescue TriangleError
-      end
+      #rescue TriangleError
+      #end
     else (a + b) < c || (a + c) < b || (a + c) < b
-      begin
+      #begin
         raise TriangleError
-      rescue TriangleError
-      end
+      #rescue TriangleError
+      #end
     end
   end
 
